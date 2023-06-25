@@ -3,7 +3,62 @@
 <head>
     <title>Text Analyzer Results</title>
     <style>
-        /* CSS styles for your page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
+
+        .neutral {
+            color: blue;
+        }
+
+        /* Styling for the "Analyze Again" button */
+        .analyze-button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .analyze-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -16,9 +71,9 @@
             </p>
         </div>
 
-        <!-- Add the "Analyze Again" button -->
+        <!-- Add the stylish "Analyze Again" button -->
         <form action="/" method="get">
-            <button type="submit">Analyze Again</button>
+            <button class="analyze-button" type="submit">Analyze Again</button>
         </form>
     </div>
 </body>
